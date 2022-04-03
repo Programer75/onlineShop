@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    {{>head}}
+    <script type="text/javascript" src="https://vk.com/js/api/openapi.js?168" charset="windows-1251"></script>
+    <script type="text/javascript">
+        VK?.init({ apiId: 8038652});
+    </script>
+    <title>Регистрация</title>
+</head>
+
+<body>
+    {{>header}}
+    <div class="registration">
+        <script type="text/javascript">
+            VK.init({
+                apiId: 8038611
+            });
+        </script>
+        <h2>Регистрация</h2>
+        <form action="/newacc">
+            <input type="text" placeholder="Введите ваш логин..." name="lgn" id="loginInput">
+            <input type="password" placeholder="Введите ваш пароль..." name="pswrd" id="passInput">
+            <button class="btnNewAccountSubmit" type="submit">Зарегистрироватся</button>
+        </form>
+        {{! <h3>или</h3>
+        <div id="vk_auth"></div>
+        <script type="text/javascript">
+            VK.Widgets.Auth("vk_auth", {
+                width: 250,
+                authUrl: "/dev/Login"});
+        </script> }}
+    </div>
+    {{!-- {{> footer}} --}}
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

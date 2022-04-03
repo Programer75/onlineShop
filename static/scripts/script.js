@@ -1,0 +1,18 @@
+$('#connect').click(()=>{
+    document.location.replace('/connect')
+});
+$('#gotoshop').click(()=>{
+    document.location.replace('/find')
+});
+$('#home').click(()=>{
+    document.location.replace('/')
+});
+$('#goToStore').click(()=>{
+    document.location.replace('/')
+});
+$('#userCart').click(()=>{
+    document.location.replace('/user/cart')
+});
+$('#pay').click(()=>{
+    document.location.replace('/pay')
+});

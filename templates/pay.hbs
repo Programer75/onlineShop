@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    {{> head}}
+    <script src="/scripts/script.js" defer></script>
+    <script src="/scripts/connect.js" defer></script>
+    <title>Оплата</title>
+</head>
+
+<body>
+    {{>header}}
+    <main>
+        <div class="img">
+            <img src="/images/sticker_vk_rainy_029.png" alt="">
+        </div>
+        <div class="main-text">
+            <div class="text">
+                <h2>Оплата через банковскую карту</h2>
+                <ol class="how">
+                    <li>Оплатите игру,</li>
+                    <li>Вы получите код оплаты, введите его в поле ниже;</li>
+                    <li>
+                        <fieldset>
+                            <legend><b>Получение токена</b></legend>
+                            <input type="text" placeholder="Введите свой логин.." name="" id="user"><br>
+                            <input type="password" placeholder="Введите свой пароль.." name="" id="pass">
+                            <div class="button">
+                                <input class="btn-rounded-how" type="button" value="Получить токен" id="tkn">
+                            </div>
+                        </fieldset>
+                    </li>
+                </ol>
+            </div>
+
+
+        </div>
+    </main>
+    {{!-- {{> footer}} --}}
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

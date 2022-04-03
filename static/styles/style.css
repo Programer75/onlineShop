@@ -1,0 +1,542 @@
+@font-face {
+  font-family: "VKlogo";
+  src: url("../fonts/VKSansDemiBold.otf") format("opentype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "VK";
+  src: url("../fonts/VKSansMedium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #FFFFFF;
+  font-family: 'VK';
+}
+header {
+  height: 75px;
+  width: 100%;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 4%;
+  box-sizing: border-box;
+  text-decoration: none;
+  border-bottom: #0077FF solid 5px;
+}
+header .logo {
+  font-family: 'VKlogo';
+  font-size: 16px;
+  display: flex;
+  line-height: 50px;
+}
+header .logo .logo-img {
+  box-sizing: border-box;
+  margin: auto;
+  height: 50px;
+  width: 50px;
+}
+header .logo .logo-text {
+  margin-left: 5px;
+}
+header nav {
+  font-size: 24px;
+}
+header nav .horiz-menu {
+  font-family: 'VK';
+  display: flex;
+  list-style-type: none;
+  padding: 0px;
+}
+header nav .horiz-menu > li > a {
+  text-decoration: none;
+}
+header nav .horiz-menu > li > a:visited {
+  color: #0077FF;
+}
+header nav .horiz-menu > li:not(:last-child) {
+  margin-right: 26px;
+}
+header nav .horiz-menu > li:first-child {
+  margin-left: 50px;
+}
+header nav .horiz-menu > li.active {
+  font-weight: bold;
+}
+header .acc {
+  height: 75px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-content: space-between;
+  align-items: center;
+  flex-direction: inherit;
+}
+header .acc a {
+  text-decoration: none;
+  color: #0077FF;
+}
+header .acc .user-cart,
+header .acc .account-logo {
+  float: left;
+}
+header .acc .account-logo {
+  margin: auto;
+  line-height: 60px;
+  text-align: center;
+  border: 2px solid #0077FF;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  margin-right: 10px;
+}
+header .acc .user-cart {
+  border-radius: 50%;
+  background-color: #0077FF;
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  line-height: 55px;
+  width: 50px;
+  height: 50px;
+}
+main {
+  position: relative;
+  border-radius: 15px;
+  margin: auto;
+  margin-top: 25px;
+  width: 80%;
+  height: 80vh;
+  margin-bottom: 5vh;
+  box-shadow: 0.4em 0.4em 15px rgba(0, 0, 0, 0.571);
+}
+main .find {
+  position: relative;
+  top: 10px;
+  height: 10vh;
+  width: 70%;
+  margin: auto;
+}
+main .find #search-text {
+  border: 1px solid #0077FF;
+  border-radius: 15px 0px 0px 15px;
+  box-sizing: border-box;
+  float: left;
+  font-size: 24px;
+  width: 95%;
+  height: 50px;
+}
+main .find #btnfind {
+  border: 1px solid #0077FF;
+  border-radius: 0px 15px 15px 0px;
+  box-sizing: border-box;
+  background-color: #0077FF;
+  float: left;
+  height: 50px;
+  width: 5%;
+}
+main .find #btnfind .icon {
+  font-size: 30px;
+  color: white;
+}
+main .notfound {
+  display: none;
+}
+main .foundyet {
+  width: 69%;
+  height: 15vh;
+  border: 1px solid #0077FF;
+  border-radius: 15px;
+  margin: auto;
+  display: block;
+}
+main .index-img,
+main .index-text {
+  height: 40vh;
+  float: left;
+}
+main .img,
+main .main-text {
+  width: 50%;
+  height: 100vh;
+  float: left;
+}
+main .img {
+  position: relative;
+  top: 75px;
+  left: 75px;
+}
+main .img img {
+  height: 450px;
+  width: 450px;
+}
+main .main-text {
+  position: relative;
+  top: 75px;
+  right: 15px;
+  font-weight: 300;
+  font-size: 20px;
+}
+main .main-text h1 {
+  font-size: 60px;
+}
+main .main-text h2 {
+  font-size: 48px;
+}
+main .main-text .notfound-text {
+  text-align: center;
+}
+main .main-text span {
+  font-size: 24px;
+}
+main .main-text .text {
+  margin-bottom: 50px;
+}
+main .main-text .text .how {
+  font-size: 24px;
+  font-weight: 600;
+}
+main .main-text .btn-rounded {
+  border: #0077FF solid 1px;
+  border-radius: 25px;
+  width: 250px;
+  height: 50px;
+  color: white;
+  font-weight: 800;
+  font-size: 20px;
+  background-color: #0077FF;
+}
+main .main-text .btn-rounded-how {
+  border: #0077FF solid 1px;
+  border-radius: 25px;
+  width: 300px;
+  height: 50px;
+  color: white;
+  font-weight: 800;
+  font-size: 20px;
+  background-color: #0077FF;
+}
+main .index-img {
+  width: 40%;
+  position: relative;
+  top: 50px;
+  left: 250px;
+}
+main .index-img img {
+  height: 300px;
+  width: 300px;
+}
+main .index-text {
+  width: 60%;
+  position: relative;
+  top: 25px;
+  right: 15px;
+  font-weight: 300;
+  font-size: 20px;
+}
+main .index-text h1 {
+  font-size: 60px;
+}
+main .index-text h2 {
+  font-size: 48px;
+}
+main .index-text .notfound-text {
+  text-align: center;
+}
+main .index-text span {
+  font-size: 24px;
+}
+main .index-text .text {
+  margin-bottom: 25px;
+}
+main .index-text .text .how {
+  font-size: 24px;
+  font-weight: 600;
+}
+main .index-text .btn-rounded {
+  border: #0077FF solid 1px;
+  border-radius: 25px;
+  width: 250px;
+  height: 50px;
+  color: white;
+  font-weight: 800;
+  font-size: 20px;
+  background-color: #0077FF;
+}
+main .index-text .btn-rounded-how {
+  border: #0077FF solid 1px;
+  border-radius: 25px;
+  width: 300px;
+  height: 50px;
+  color: white;
+  font-weight: 800;
+  font-size: 20px;
+  background-color: #0077FF;
+}
+main .search-img {
+  float: left;
+  position: relative;
+  top: 15px;
+  left: 75px;
+}
+main .search-img img {
+  height: 100px;
+  width: 100px;
+}
+main .search-text {
+  float: left;
+  position: relative;
+  top: 15px;
+  font-size: 24px;
+  margin-left: 75px;
+  line-height: 100px;
+}
+main .search-text h2 {
+  font-size: 48px;
+}
+main .search-text .notfound-text {
+  text-align: center;
+}
+main .list {
+  float: left;
+  height: 45vh;
+  width: 95%;
+  padding: 15px;
+  border-radius: 25px;
+  position: relative;
+  left: 20px;
+}
+main .list .products {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+main .list .products a {
+  text-decoration: none;
+  cursor: default;
+}
+main .list .products .productItem {
+  border: 1px solid blue;
+  border-radius: 15px;
+  float: left;
+  width: 250px;
+  height: 200px;
+  margin-right: 15px;
+}
+main .list .products .productItem p {
+  color: #000000;
+  margin-left: 10px;
+  line-height: 20px;
+}
+main .list .products .productItem img {
+  border-radius: 15px 15px 0px 0px;
+  width: 250px;
+  border-bottom: 1px solid #0077FF;
+}
+main .cart-list,
+main .cart-text {
+  height: 80vh;
+  float: left;
+}
+main .cart-text {
+  width: 30%;
+}
+main .cart-text ul {
+  list-style-type: none;
+}
+main .cart-text ul li {
+  color: #6a6a6a;
+}
+main .cart-text .text {
+  margin-bottom: 25px;
+}
+main .cart-text .text .how {
+  font-size: 24px;
+  font-weight: 600;
+}
+main .cart-text .btn-rounded-how {
+  border: #0077FF solid 1px;
+  border-radius: 25px;
+  width: 300px;
+  height: 50px;
+  color: white;
+  font-weight: 800;
+  font-size: 20px;
+  background-color: #0077FF;
+}
+main .cart-list {
+  width: 70%;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+main .cart-list a {
+  text-decoration: none;
+  cursor: default;
+}
+main .cart-list .productItem {
+  border: 1px solid blue;
+  border-radius: 15px;
+  float: left;
+  width: 250px;
+  height: 200px;
+  margin: 10px;
+}
+main .cart-list .productItem p {
+  color: #000000;
+  margin-left: 10px;
+  line-height: 20px;
+}
+main .cart-list .productItem img {
+  border-radius: 15px 15px 0px 0px;
+  width: 250px;
+  border-bottom: 1px solid #0077FF;
+}
+main .findList {
+  float: left;
+  height: 45vh;
+  width: 95%;
+  padding: 15px;
+  border-radius: 25px;
+  position: relative;
+  left: 20px;
+}
+main .findList .products {
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+main .findList .products a {
+  text-decoration: none;
+  cursor: default;
+}
+main .findList .products .productItem {
+  border: 1px solid blue;
+  border-radius: 15px;
+  float: left;
+  width: 250px;
+  height: 200px;
+  margin-right: 15px;
+}
+main .findList .products .productItem p {
+  color: #000000;
+  margin-left: 10px;
+  line-height: 20px;
+}
+main .findList .products .productItem img {
+  border-radius: 15px 15px 0px 0px;
+  width: 250px;
+  border-bottom: 1px solid #0077FF;
+}
+.game-page {
+  position: relative;
+  border-radius: 15px;
+  margin: auto;
+  margin-top: 25px;
+  width: 80%;
+  height: 550px;
+  margin-bottom: 5vh;
+  box-shadow: 0.4em 0.4em 15px rgba(0, 0, 0, 0.571);
+}
+.game-page .game {
+  font-weight: 300;
+  font-size: 20px;
+}
+.game-page .game h2 {
+  font-size: 32px;
+}
+.game-page .game .game-img,
+.game-page .game .game-text,
+.game-page .game .goback {
+  float: left;
+}
+.game-page .game .game-img {
+  width: 67%;
+}
+.game-page .game .game-img img {
+  border-radius: 15px 0px 0px 15px;
+}
+.game-page .game .goback {
+  background-color: #0077FF;
+  border-radius: 50%;
+  line-height: 60px;
+  text-align: center;
+  font-size: 35px;
+  height: 50px;
+  width: 50px;
+  color: white;
+}
+.game-page .game .game-text {
+  width: 25%;
+  padding: 15px;
+}
+.game-page .game .game-text .btn-rounded {
+  float: left;
+  border: #0077FF solid 1px;
+  border-radius: 25px;
+  width: 250px;
+  height: 50px;
+  color: white;
+  font-weight: 800;
+  font-size: 20px;
+  background-color: #0077FF;
+  margin-right: 10px;
+}
+.game-page .game .game-text .cart {
+  float: left;
+  background-color: #0077FF;
+  border-radius: 50%;
+  line-height: 50px;
+  text-align: center;
+  font-size: 25px;
+  height: 50px;
+  width: 50px;
+  color: white;
+}
+.registration {
+  position: relative;
+  margin: auto;
+  margin-top: 10vh;
+  text-align: center;
+  width: 350px;
+  height: 500px;
+  border: 5px solid #0077FF;
+  border-radius: 25px;
+  font-weight: 300;
+  font-size: 20px;
+}
+.registration input {
+  border-bottom: 3px solid #0077FF;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  height: 25px;
+  width: 250px;
+  font-size: 16px;
+  font-family: 'VK';
+}
+.registration .btnNewAccountSubmit {
+  border: #0077FF solid 1px;
+  border-radius: 20px;
+  width: 250px;
+  height: 50px;
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+  background-color: #0077FF;
+}
+footer {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  margin-top: 15px;
+  line-height: 50px;
+}
+footer .line {
+  margin-top: 25px;
+  width: 100%;
+  height: 5px;
+  background-color: #0077FF;
+}

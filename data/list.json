@@ -1,0 +1,39 @@
+{
+    "list": [
+        {
+            "productName": "Red Dead Redemption 2",
+            "cost": "4200 руб",
+            "description": "Red Dead Redemption 2 — компьютерная игра в жанрах action-adventure и шутера от третьего лица с открытым миром, разработанная Rockstar Studios",
+            "id":"17501",
+            "imgSrc":"/images/game/rdr21.jpg"
+        },
+        {
+            "productName": "The Elder Scrolls V: Skyrim",
+            "cost": "1599 руб",
+            "description": "Winner of more than 200 Game of the Year Awards, Skyrim Special Edition brings the epic fantasy to life in stunning detail. The Special Edition includes the critically acclaimed game and add-ons with all-new features like remastered art and effects, volumetric god rays, dynamic depth of field, screen-space",
+            "id":"17502",
+            "imgSrc":"/images/game/scyrimphoto.jpg"
+        },
+        {
+            "productName": "Minecraft",
+            "cost": "1900 руб",
+            "description": "Компьютерная инди-игра в жанре песочницы, созданная шведским программистом Маркусом Перссоном и выпущенная его компанией Mojang AB. Перссон опубликовал начальную версию игры в 2009 году; в конце 2011 года была выпущена стабильная версия для ПК Microsoft Windows",
+            "id":"17503",
+            "imgSrc":"/images/game/minecraftphoto.jpg"
+        },
+        {
+            "productName": "God of War",
+            "cost": "3149 руб",
+            "description": "Отомстив богам Олимпа, Кратос живет в царстве скандинавских божеств и чудовищ. В этом суровом беспощадном мире он должен не только самостоятельно бороться за выживание... но и научить этому сына.",
+            "id":"17504",
+            "imgSrc":"/images/game/gowphoto.jpg"
+        },
+        {
+            "productName": "Grand Theft Auto V",
+            "cost": "1499 руб",
+            "description": "Grand Theft Auto V – игра с огромным открытым миром. Ее действие происходит в Лос-Сантосе – городе солнца, который ныне является пристанищем дрянных реалити-шоу, задыхающимся в тисках экономических проблем. Исследуйте мир Лос-Сантоса в сюжетном режиме GTA V или в динамичной многопользовательской игре GTA Online.",
+            "id":"17505",
+            "imgSrc":"/images/game/gtavphoto.jpg"
+        }
+    ]
+}

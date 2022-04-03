@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    {{> head}}
+    <script src="/scripts/script.js" defer></script>
+    <title>Корзина</title>
+</head>
+<body>
+    {{> header}}
+    <main>
+        {{#if total}}
+            <div class="cart-list">
+            <h2>У вас в корзине:</h2>
+            {{#each userList}}
+            <a href="/game/{{this.id}}">
+                <div class="productItem" id="{{this.id}}">
+                    <img src="{{this.imgSrc}}" alt="">
+                    <p>{{this.productName}}<br>Цена: <b>{{this.cost}}.</b></p>
+                </div>
+            </a>
+            {{/each}}
+            </div>
+            <div class="cart-text">
+                <div class="text">
+                    <h1>Итого: {{total}} руб.</h1>
+                    <ul class="pay">
+                        {{#each userList}}
+                            <li>{{>game game=.}}</li>
+                        {{/each}}
+                    </ul>
+                </div>
+                <div class="button">
+                    <input class="btn-rounded-how" type="button" value="Оплатить {{total}} руб." id="pay">
+               </div>
+            </div>
+        {{else}}
+            <div class="cart-notfound">
+                <div class="img">
+                    <img src="/images/sticker_vk_yan_046.png" alt="">
+                </div>
+                <div class="main-text">
+                    <div class="notfound-text">
+                        <h1>Ваша корзина пуста:(</h1>
+                    </div>
+                    <div class="button">
+                        <input class="btn-rounded-how" type="button" value="Главное" id="home">
+                    </div>
+                </div>
+            </div>
+        {{/if}}
+    </main>
+    {{!-- {{> footer}} --}}
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

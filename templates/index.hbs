@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="/styles/style.css">
+    <script src="/scripts/script.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="/scripts/vkapi.js" defer></script>
+    <title>Игры</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img class="logo-img" src="/images/VKLogo/VK_Compact_Logo.svg" alt="логотип">
+            <div class="logo-text">
+                <h2>gaming</h2>
+            </div>
+        </div>
+        <nav>
+            <ul class="horiz-menu">
+                <li class="active"><a href="/index">Главное</a></li>
+                <li><a href="/help">Помощь</a></li>
+                <li><a href="/cart">Корзина</a></li>
+                <li><a href="/connect">Подключить</a></li>
+            </ul>
+        </nav>
+        <div class="acc">
+            <a href="/account"><img class="account-logo" src="" alt="Войти" id="log"></a>
+            <div class="user-cart" id="userCart">
+                <ion-icon name="cart"></ion-icon>
+            </div>
+        </div>
+        
+    </header>
+    <main>
+        <div class="index-img">
+            <img src="/images/sticker_vk_madamechatte_001.png" alt="">
+        </div>
+        <div class="index-text">
+            <div class="text">
+                <h1>Твой личный помощник в мире игр</h1>
+                <span>Мы помогаем геймерам развиваться</span>
+            </div>
+            <div class="button">
+                <input class="btn-rounded" type="button" value="А как подключить?" id="connect">
+            </div>
+        </div>
+        <div class="list">
+            <h2>У нас вы можете преобрести:</h2>
+            <div class="products">
+                {{#each list}}
+                <a href="/game/{{this.id}}">
+                    <div class="productItem" id="{{this.id}}">
+                        <img src="{{this.imgSrc}}" alt="">
+                        <p>{{this.productName}}<br>Цена: <b>{{this.cost}}.</b></p>
+                    </div>
+                </a>
+                {{/each}}
+            </div>
+        </div>
+    </main>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    {{! >footer }}
+</body>
+
+</html>

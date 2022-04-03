@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    {{> head}}
+    <script src="/scripts/script.js" defer></script>
+    <script src="/scripts/addtocart.js" defer></script>
+    <title>{{productName}}</title>
+</head>
+<body>
+    {{> header}}
+    <div class="game-page">
+        <div class="game">
+            <div class="game-img">
+                <img src="{{imgSrcLogo}}" alt="gameimage">
+            </div>
+            <div class="goback" id="goToStore">
+                <ion-icon name="arrow-back"></ion-icon>
+            </div>
+            <div class="game-text">
+                <div class="text">
+                    <h2>{{productName}}</h2>
+                    <p>{{description}}<br><br>
+                    Дата релиза: {{dataOfRelise}}<br>
+                    Возрастной рейтинг: {{age}}<br>
+                    ID товара: <span id="game-id">{{id}}</span></p>
+                </div>
+                <div class="button">
+                    <input class="btn-rounded" type="button" value="{{cost}}." id="connect">
+                    <div class="cart" id="addtocart">
+                        {{#if incart}}
+                            <ion-icon name="bag-check" id="addtocart-ico"></ion-icon>
+                        {{else}}
+                            <ion-icon name="bag-add" id="addtocart-ico"></ion-icon>
+                        {{/if}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div >
+    {{!-- {{> footer}} --}}
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

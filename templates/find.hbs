@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    {{>head}}
+    <script src="/scripts/search.js" defer></script>
+    <title>Поиск</title>
+</head>
+
+<body>
+    {{>header}}
+    <main>
+        <div class="find">
+            <input type="text" id="search-text" placeholder="Введите название игры..." list="games">
+            <datalist id="games">
+                <option value="Red Dead Redemption 2">
+                <option value="The Elder Scrolls V: Skyrim">
+                <option value="Grand Theft Auto V"></option>
+                <option value="God of War"></option>
+                <option value="Minecraft"></option>
+            </datalist>
+            <button id="btnfind">
+                <ion-icon class="icon" name="search"></ion-icon>
+            </button>
+        </div>
+        <div class="found">
+            <div class="foundyet" id="finddiv">
+                <div class="search-img">
+                    <img src="/images/sticker_vk_rainy_029.png" alt="">
+                </div>
+                <div class="search-text">
+                    <div class="found-text">
+                        Здесь вы можете найти нужную себе игру через поиск по товарам!!!
+                    </div>
+                </div>
+            </div>
+            <div id="list" class="findList">
+                <h2 id="findText">На данный момент у нас имеется:</h2>
+                <div class="products" id="productList">
+                    {{#each list}}
+                    <a href="/game/{{this.id}}">
+                        <div class="productItem" id="{{this.id}}">
+                            <img src="{{this.imgSrc}}" alt="">
+                            <p>{{this.productName}}<br>Цена: <b>{{this.cost}}.</b></p>
+                        </div>
+                    </a>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+        <div class="notfound" id="notfound">
+            <div class="img">
+                <img src="/images/sticker_vk_yan_046.png" alt="">
+            </div>
+            <div class="main-text">
+                <div class="notfound-text">
+                    <h2>По вашему запросу ничего не найдено:(</h2>
+                </div>
+            </div>
+        </div>
+    </main>
+    {{!-- {{> footer}} --}}
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
